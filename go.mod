@@ -22,7 +22,7 @@ require (
 	github.com/prometheus/common v0.67.5
 	github.com/prometheus/prometheus v1.8.2-0.20211105201321-411021ada9ab
 	github.com/rhobs/obo-prometheus-operator/pkg/apis/monitoring v0.89.0-rhobs1
-	github.com/rhobs/observability-operator/pkg/apis v0.0.0-20260526111256-d060f2123a80
+	github.com/rhobs/observability-operator/pkg/apis v0.0.0-20260527084216-a8b938546b57
 	github.com/sethvargo/go-retry v0.3.0
 	github.com/stretchr/testify v1.11.1
 	k8s.io/api v0.35.1
