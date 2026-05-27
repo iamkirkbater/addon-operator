@@ -1266,8 +1266,8 @@ github.com/rcrowley/go-metrics v0.0.0-20181016184325-3113b8401b8a/go.mod h1:bCqn
 github.com/retailnext/hllpp v1.0.1-0.20180308014038-101a6d2f8b52/go.mod h1:RDpi1RftBQPUCDRw6SmxeaREsAaRKnOclghuzp/WRzc=
 github.com/rhobs/obo-prometheus-operator/pkg/apis/monitoring v0.89.0-rhobs1 h1:e2ZFNrG7m7YE7SQCI0Ic/6rhEH8NCBEylA6+kpJQLWg=
 github.com/rhobs/obo-prometheus-operator/pkg/apis/monitoring v0.89.0-rhobs1/go.mod h1:n3FXshd/fzRA5gzdmNQFI2td0KZ5GRj5RRZghYPNHvw=
-github.com/rhobs/observability-operator/pkg/apis v0.0.0-20260526111256-d060f2123a80 h1:70nKSSPD4UgLlj/RWtVt0ZwG7UHuZ2JX2S1ZR3S57f8=
-github.com/rhobs/observability-operator/pkg/apis v0.0.0-20260526111256-d060f2123a80/go.mod h1:hvRULWSlh/V3aVng3C4P/V6dgSLshuX5oTZ5QxrWlxs=
+github.com/rhobs/observability-operator/pkg/apis v0.0.0-20260527084216-a8b938546b57 h1:LTc5GTaFATPyfjA1aKAe5QmRd+BhvvzoaTL/af91gnQ=
+github.com/rhobs/observability-operator/pkg/apis v0.0.0-20260527084216-a8b938546b57/go.mod h1:hvRULWSlh/V3aVng3C4P/V6dgSLshuX5oTZ5QxrWlxs=
 github.com/rogpeppe/fastuuid v0.0.0-20150106093220-6724a57986af/go.mod h1:XWv6SoW27p1b0cqNHllgS5HIMJraePCO15w5zCzIWYg=
 github.com/rogpeppe/fastuuid v1.2.0/go.mod h1:jVj6XXZzXRy/MSR5jhDC/2q6DgLz+nrA6LYCDYWNEvQ=
 github.com/rogpeppe/go-internal v1.1.0/go.mod h1:M8bDsm7K2OlrFYOpmOWEs/qY81heoFRclV5y23lUDJ4=
