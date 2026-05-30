@@ -9,8 +9,9 @@ package main
 import (
 	_ "crypto/tls/fipsonly"
 	"fmt"
+	"os"
 )
 
 func init() {
-	fmt.Println("***** Starting with FIPS crypto enabled *****")
+	fmt.Fprintf(os.Stderr, "***** Starting with FIPS crypto enabled *****\n")
 }
