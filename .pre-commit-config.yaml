@@ -2,7 +2,8 @@ exclude: |
   (?x)(
     (^vendor/)|
     (.deepcopy.go$)|
-    (mage_output_file.go$)
+    (mage_output_file.go$)|
+    (.claude/settings.json$)
   )
 repos:
 - repo: https://github.com/pre-commit/pre-commit-hooks
