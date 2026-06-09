@@ -4,3 +4,19 @@ FROM registry.access.redhat.com/ubi9/ubi:9.7-1770238273
 RUN yum update -y && yum install -y python3 python3-pip
 
 RUN pip3 install pre-commit
+
+# Signal to pre-commit hooks that we are running in CI. The golangci-lint
+# hook checks this and exits 0 to avoid a full-repo analysis OOM/panic;
+# CI already runs golangci-lint via the dedicated 'lint' job (make lint).
+ENV PRE_COMMIT_CI=1
+
+# Pre-warm Go module download cache and build cache so pre-commit hooks
+# don't time out or hit permission errors in CI.
+# - go mod download: fetches all dependencies (incl. test-only) so
+#   non-root cannot be blocked downloading to /go/pkg/mod/cache
+# - go build ./...: warms the build cache at /tmp/go-build
+# - chmod: OpenShift runs containers as a random non-root UID; both
+#   caches are created here by root and must be world-accessible.
+RUN go mod download 2>/dev/null || true \
+    && go build ./... 2>/dev/null || true \
+    && chmod -R a+rwX "$(go env GOMODCACHE)" "$(go env GOCACHE)" 2>/dev/null || true

@@ -97,6 +97,8 @@ func (r *olmReconciler) observeOperatorResource(
 	switch phase {
 	case operatorsv1alpha1.CSVPhaseSucceeded:
 		// do nothing here
+	case "":
+		message = "unknown/pending"
 	case operatorsv1alpha1.CSVPhaseFailed:
 		message = "failed"
 	default:
